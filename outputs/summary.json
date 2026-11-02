@@ -1,0 +1,58 @@
+{
+  "benchmark": "Agent Memory Integrity Benchmark (AMIB)",
+  "version": "0.2.0",
+  "synthetic_episodes_per_seed": 6000,
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "policies": [
+    "unrestricted",
+    "write_filter",
+    "task_scoped",
+    "verified_write_task_scoped",
+    "no_persistent_memory"
+  ],
+  "total_episode_policy_evaluations": 150000,
+  "metrics": {
+    "unrestricted": {
+      "attack_success_rate": 0.1356,
+      "benign_memory_retention": 0.6227333333333334,
+      "task_completion_rate": 0.6508666666666667,
+      "cross_task_contamination_rate": 0.2788333333333334,
+      "false_rejection_rate": 0.0
+    },
+    "write_filter": {
+      "attack_success_rate": 0.024166666666666663,
+      "benign_memory_retention": 0.561,
+      "task_completion_rate": 0.7077,
+      "cross_task_contamination_rate": 0.2105,
+      "false_rejection_rate": 0.06173333333333333
+    },
+    "task_scoped": {
+      "attack_success_rate": 0.09743333333333334,
+      "benign_memory_retention": 0.45,
+      "task_completion_rate": 0.6383333333333334,
+      "cross_task_contamination_rate": 0.0,
+      "false_rejection_rate": 0.0
+    },
+    "verified_write_task_scoped": {
+      "attack_success_rate": 0.018233333333333334,
+      "benign_memory_retention": 0.4046,
+      "task_completion_rate": 0.6766,
+      "cross_task_contamination_rate": 0.0,
+      "false_rejection_rate": 0.06173333333333333
+    },
+    "no_persistent_memory": {
+      "attack_success_rate": 0.0,
+      "benign_memory_retention": 0.0,
+      "task_completion_rate": 0.6051333333333334,
+      "cross_task_contamination_rate": 0.0,
+      "false_rejection_rate": 0.0
+    }
+  },
+  "interpretation_warning": "Synthetic simulator results only; not real-world agent or LLM measurements."
+}

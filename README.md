@@ -1,5 +1,7 @@
 # Agent Memory Integrity Benchmark (AMIB) v0.2.0
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24227859.svg)](https://doi.org/10.5281/zenodo.24227859)
+
 A reproducible **synthetic** benchmark for evaluating persistent-memory integrity in multi-task AI-agent workflows.
 
 ## Research question

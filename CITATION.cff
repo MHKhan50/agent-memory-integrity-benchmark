@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Agent Memory Integrity Benchmark (AMIB)"
 version: 0.2.0
+doi: 10.5281/zenodo.24227859
 date-released: 2026-11-14
 type: software
 authors:
